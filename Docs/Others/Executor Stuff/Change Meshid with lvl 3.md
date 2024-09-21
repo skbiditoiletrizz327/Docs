@@ -5,18 +5,18 @@ local InsertService = game:GetService("InsertService")
 local OldInstance = Instance.new --> Storing for later
 local Instance = {} --> Instance: readonly so yeah
 function Instance.new(type,parent,id)
-    if type == "MeshPart" and id then
-       local Object = InsertService:CreateMeshPartAsync(
-             id, 
-             Enum.CollisionFidelity.Default, 
-             Enum.RenderFidelity.Automatic
-       )
+	if type == "MeshPart" and id then 
+		local Object = InsertService:CreateMeshPartAsync(
+            id, 
+            Enum.CollisionFidelity.Default, 
+            Enum.RenderFidelity.Automatic
+        )
 
-       Object.Parent = parent 
-       return Object
-    end 
+		Object.Parent = parent 
+		return Object
+	end 
 
-    return OldInstance(type,parent)  
+	return OldInstance(type,parent)
 end
 
 local Tool =  Instance.new("Tool",game.Players.LocalPlayer.Backpack)
