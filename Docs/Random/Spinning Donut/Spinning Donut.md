@@ -3,9 +3,6 @@
 > [Math & Logic came from here](https://www.a1k0n.net/2011/07/20/donut-math.html)
 
 ```lua
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 local Modules = {
     Colors = {
         ["Green"] = "0,255,0",
