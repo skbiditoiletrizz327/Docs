@@ -1,7 +1,8 @@
-local InsertService = game:GetService("InsertService")
-local OldInstance = Instance.new --> Storing for later
+> Allows you to create a meshpart with a custom meshid on a level 3 executor
 
 ```lua
+local InsertService = game:GetService("InsertService")
+local OldInstance = Instance.new --> Storing for later
 local Instance = {} --> Instance: readonly so yeah
 function Instance.new(type,parent,id)
 	if type == "MeshPart" and id then 
