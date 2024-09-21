@@ -5,7 +5,7 @@ local InsertService = game:GetService("InsertService")
 local OldInstance = Instance.new --> Storing for later
 
 local Instance = {} --> Instance: readonly so yeah
-local function Instance.new(type,parent,id)
+function Instance.new(type,parent,id)
 	if type == "MeshPart" and id then 
 		local Object = InsertService:CreateMeshPartAsync(
             id, 
