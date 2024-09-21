@@ -1,9 +1,6 @@
 > Used for dumping moonsec v3 scripts to analyze the content / understand the script better
 
 ```lua
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 local old = unpack
 local old_append = appendfile 
 
